@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.bodygraph{
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 4% 96%;
+    justify-content: start;
+}

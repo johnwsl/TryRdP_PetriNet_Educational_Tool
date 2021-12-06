@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Rede de Petri" />
+        <meta name="author" content="" />
+
+        <title>TryRdP</title>
+        <!--Biblioteca vex - para a criação de caixas de diálogo-->
+        <script src="../vex/dist/js/vex.combined.min.js"></script>
+        <link rel="stylesheet" href="../vex/dist/css/vex.css" />
+        <link rel="stylesheet" href="../vex/dist/css/vex-theme-default.css" />
+        <link rel="stylesheet" href="../vex/dist/css/vex-theme-os.css" />
+        <link rel="stylesheet" href="../vex/dist/css/vex-theme-plain.css" />
+        <link rel="stylesheet" href="../vex/dist/css/vex-theme-wireframe.css" />
+        <link rel="stylesheet" href="../vex/dist/css/vex-theme-flat-attack.css" />
+        <link rel="stylesheet" href="../vex/dist/css/vex-theme-top.css" />
+        <link rel="stylesheet" href="../vex/dist/css/vex-theme-bottom-right-corner.css" />  
+
+        <link href="../css/styles.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark" style="height: 95px">
+            <div><img src="../logo.png" class="img-rounded" width="180" height="130">&nbsp; &nbsp;</div>
+            <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle"><i class="fas fa-bars fa-2x"></i></button>
+
+            <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+                <h2 style="color: white;">TryRdP</h2>
+            </div>
+        </nav>
+
+        <div id="layoutSidenav">
+
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+
+                            <div class="sb-sidenav-menu-heading"></div>
+
+                            <a class="nav-link" href="../index.html"><div class="sb-nav-link-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                                O que é o TryRdP?
+                            </a>
+
+                            <div class="sb-sidenav-menu-heading">Conteúdo</div>
+
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#intro" aria-expanded="false" aria-controls="intro">
+                                <div class="sb-nav-link-icon"><i class="material-icons">menu_book</i></div>
+                                1-Introdução
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="intro" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link"  href="introducaoasredesdepetri.html">1.1 Introdução às Redes de Petri</a>
+                                    <a class="nav-link"  href="elementosbasicos.html">1.2 Elementos básicos (lugares, transições, arcos e tokens)</a>
+                                    <a class="nav-link"  href="elementosbasicosumexemplo.html">1.3 Elementos básicos (um exemplo)</a>
+                                    <a class="nav-link"  href="funcionamento.html">1.4 Funcionamento de uma Rede de Petri</a>
+                                    <a class="nav-link"  href="ferramentausoqcb.html">Exercício de Fixação 1.1 (quebra-cabeça) </a> 
+                                    <a class="nav-link"  href="exerciciofixacaoqcb1.html">Exercício de Fixação 1.1 </a>   
+                                    <a class="nav-link"  href="exerciciofixacaoqcb2.html">Exercício de Fixação 1.2  </a>
+                                    <a class="nav-link"  href="funcionamentocondicao.html">1.5 Funcionamento de uma Rede de Petri(pré-condição, disparo e pós-condição) </a>
+                                    <a class="nav-link"  href="funcionamentocondicaoumexemplo.html">1.6 Funcionamento de uma Rede de Petri(pré-condição, disparo e pós-condição) - Um Exemplo</a>
+                                    <a class="nav-link"  href="ferramentauso.html">Exercício de Fixação 1.3 (montagem de grafo) </a>
+                                    <a class="nav-link"  href="exerciciofixacao3.html">Exercício de Fixação 1.3 </a>
+                                    <a class="nav-link"  href="exerciciofinal1.html">Exercício Final 1.1</a>
+                                </nav>
+                            </div>
+                            
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#modelbasico" aria-expanded="false" aria-controls="modelbasico">
+                                <div class="sb-nav-link-icon"><i class="material-icons">trending_up</i></div>
+                                2-Modelagem Básica
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="modelbasico" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="../cap2/modelbasica.html">2 Modelagem Básica</a>
+                                    <a class="nav-link" href="../cap2/redesequencia.html">2.1 Redes Elementares(Sequenciamento)</a>
+                                    <a class="nav-link" href="../cap2/rededistribuicao.html">2.2 Redes Elementares(Distribuição)</a>
+                                    <a class="nav-link" href="../cap2/cap2exfixqcb1.html">Exercício de Fixação 2.1</a>
+                                    <a class="nav-link" href="../cap2/redejoin.html">2.3 Redes Elementares(Junção)</a>
+                                    <a class="nav-link" href="../cap2/cap2exfixqcb2.html">Exercício de Fixação 2.2</a>
+                                    <a class="nav-link" href="../cap2/redeescolha.html">2.4 Redes Elementares(Escolha Não-Determinística)</a>
+                                    <a class="nav-link" href="../cap2/cap2exfixqcb3.html">Exercício de Fixação 2.3</a>
+                                    <a class="nav-link" href="../cap2/buffer.html">2.5 Modelagem com Buffer</a>
+                                    <a class="nav-link" href="../cap2/cap2exfixqcb4.html">Exercício de Fixação 2.4</a>
+                                    <a class="nav-link" href="../cap2/arcoinibidor.html">2.6 Modelagem com Arco Inibidor</a> 
+                                    <a class="nav-link" href="../cap2/arcoinibidorexemplo.html">2.6 Modelagem com Arco Inibidor(exemplo)</a>
+                                    <a class="nav-link" href="../cap2/cap2exfixqcb5.html">Exercício de Fixação 2.5</a>
+                                    <a class="nav-link" href="../cap2/arcomultivalor.html">2.7 Modelagem com Arcos Multivalorados</a>
+                                    <a class="nav-link" href="../cap2/cap2exfixqcb6.html">Exercício de Fixação 2.6</a>
+                                    <a class="nav-link" href="../cap2/estocastico.html">2.8 Rede de Petri Estocástica</a>
+                                    <a class="nav-link" href="../cap2/estocasticoimediata.html">2.8 Rede de Petri Estocástica (transição imediata e exemplo)</a>
+                                    <a class="nav-link" href="../cap2/estocasticofila.html">2.9 Modelo de Fila e Exemplo</a>
+                                    <a class="nav-link" href="../cap2/cap2exfix1.html">Exercício de Fixação 2.7</a>
+                                    <a class="nav-link" href="../cap2/cap2exfix2.html">Exercício de Fixação 2.8</a>
+                                    <a class="nav-link" href="../cap2/cap2exfix3.html">Exercício de Fixação 2.9</a>
+                                    <a class="nav-link" href="../cap2/cap2exfix4.html">Exercício de Fixação 2.10</a>
+                                    <a class="nav-link" href="../cap2/disponibilidade.html">2.10 Disponibilidade</a>
+                                    <a class="nav-link" href="../cap2/cap2exfix5.html">Exercício de Fixação 2.11</a>
+                                    <a class="nav-link" href="../cap2/cap2exfix6.html">Exercício de Fixação 2.12</a>
+                                    <a class="nav-link" href="../cap2/cap2exfinal1.html">Exercício Final 2.1</a>
+                                    <a class="nav-link" href="../cap2/cap2exfinal2.html">Exercício Final 2.2</a>
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#modelavan" aria-expanded="false" aria-controls="modelavan">
+                                <div class="sb-nav-link-icon"><i class="material-icons"> functions </i></div>
+                                3-Modelagem Avançada
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="modelavan" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+                                </nav>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--Footer da barra de navegação-->
+                    <div class="sb-sidenav-footer">
+                        <div id="ponto" style="color: white;"></div>
+                        <br>
+                        <div class="well">
+                            <a onclick="resetar('../index.html')" class="btn btn-outline-secondary btn-sm" role="button" style="color: white; ">Resetar Pontos e Voltar ao Início</a>
+                        </div>
+                    </div>
+                    <!--////////////////////////////-->
+
+                </nav>
+            </div>
+
+            <!--Conteúdo mais o footer do lado do conteúdo(parte branca)-->
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid">
+                        <h1 class="mt-4">1-Introdução</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item">1.3 Elementos básicos (exemplo 1)</li>
+                        </ol>
+
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <p class="text-justify"> &nbsp; &nbsp; &nbsp; 
+                                    A fim de exemplificar o uso das redes de Petri, iremos modelar um exemplo de um sistema real usando os elementos básicos de uma 
+                                    RdP. Considere um sistema de estoque, o qual é composto por caminhões para entregar e distribuir produtos, bem como 
+                                    funcionários para receber e colocar os produtos nas instalações do estoque. Abaixo é apresentado um pequeno esquema desse sistema. 
+                                    Como é possível observar, um sistema de estoque pode possuir muitos detalhes. No entanto, a nível de modelagem, é possível 
+                                    considerar apenas o que é relevante para o estudo. Isto é, concentrar nas características relevantes e ignorar as irrelevantes.
+                                    Esse processo chama-se abstração. Assim, para o sistema de estoque iremos considerar apenas que ocorrem duas ações: 
+                                    (i) a chegada de um produto para ser armazenado e (ii) a saída de um produto. Além disso, iremos considerar que o estoque 
+                                    está inicialmente sem produtos e ele não tem limite de capacidade.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 text-justify">
+                            <div class="card-body">
+
+                                <div class="d-flex justify-content-center">
+                                    <img src="figurascap1/estoquefig.jpg" class="img-rounded" width="630" height="270">
+                                </div><br>
+                                <p class="text-center small">Sistema de estoque.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <p class="text-justify"> &nbsp; &nbsp; &nbsp; 
+                                    Na Figura abaixo é apresentada uma RdP que representa um sistema de estoque sem limite de capacidade.  No entanto, primeiramente, 
+                                    é necessário entender quais são os estados e as ações do sistema. Conforme explicado anteriormente, o sistema possui duas ações 
+                                    principais que consistem na chegada e saída de um produto. Além disso, o sistema pode assumir dois estados: com estoque
+                                    e sem estoque. Uma vez levantados os estados e as ações do sistema, é possível modelá-lo usando as redes de Petri.
+                                
+                                    Visto que ações e os estados são representados por transições e lugares respectivamente, o modelo resultante possui duas transições chamadas de 
+                                    <em>Chegada</em> e <em>Saída</em> que representam a chegada e a saída dos produtos, e um lugar chamado de <em>Estoque</em>
+                                    que representa o estoque do sistema. 
+                                    Por fim, os produtos são representados por tokens, pois eles são usados para especificar o estado do sistema (ex.: com ou sem estoque). 
+                                    Para representar o fluxo dos produtos, os lugares e as transições são ligados através de arcos.  Note que inicialmente não há produtos 
+                                    no estoque, então não há tokens no lugar <em>Estoque</em>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 text-justify">
+                            <div class="card-body">
+
+                                <div class="d-flex justify-content-center">
+                                    <img src="figurascap1/estoque.jpg" class="img-rounded" width="300">
+                                </div><br>
+                                <p class="text-center small">Exemplo básico de um estoque sem limite de capacidade.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 text-justify">
+                            <div class="card-body">
+                                &nbsp; &nbsp; &nbsp;
+                                Abaixo é apresentada uma animação mostrando a chegada de um produto (token) e a sua saída.
+                                Inicialmente o lugar <em>Estoque</em> encontra-se sem produtos, posteriormente, a transição <em>Chegada</em>
+                                é disparada, enviando um token para o lugar <em>Estoque</em>. Por fim, a transição <em>Saída</em> é disparada, retirando um
+                                token do lugar <em>Estoque</em>.
+                                Mais adiante será apresentado em detalhes
+                                o funcionamento de uma RdP.
+                                <br>
+                                <br>
+                                <div class="card-body">
+                                <div class="d-flex justify-content-center">
+                                    <img src="figurascap1/estoqueanima.gif" class="img-rounded" width="250" height="70" style="transform: rotate(-1.5deg);">
+                                </div><br>
+                                <p class="text-center small">Animação.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    
+                    </div>
+                </main>
+
+              <!--Botões voltar e avançar-->
+              <div class="row">
+                <div class="col-sm-12 d-flex justify-content-around mt-4 mb-4">
+
+                  <div class="well">
+                    <a href="elementosbasicos.html" class="btn btn-dark" role="button">&nbsp;Voltar&nbsp;</a>
+                  </div>
+
+                  <div class="well">
+                    <a href="elementosbasicosexemplodois.html" class="btn btn-dark" role="button">Avançar</a>
+                  </div>
+
+                </div>
+              </div>
+              <!--//////////////////////-->
+
+              <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; TryRdP 2020</div>
+                        <div>
+                            <a href="#" onclick="window.open('http://www.ufrpe.br/')">Universidade Federal Rural de Pernambuco</a>
+                        </div>
+                    </div>
+                </div>
+              </footer>
+            
+            </div>
+            <!--/////////////////////////////////////////////////////////////////////////////////////////-->
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="../js/scripts.js"></script>
+        <script type="text/javascript" src="../ferramenta/geralfuntions.js"></script>
+
+    </body>
+</html>

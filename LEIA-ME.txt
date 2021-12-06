@@ -1,0 +1,12 @@
+A ferramenta TryRdP é baseada na web e foi desenvolvida usando HTML, CSS, Bootstrap framework, 
+javaScript e quatro bibliotecas baseada no javaScript (jQuery, html2pdf, filesaver, VEX, CursorJS e MxGraph).
+
+MODIFICAÇÕES INTERNAS NA BIBLIOTECA MXGRAPH:
+
+   1-O método alert da classe mxUtils foi modificado usando a biblioteca
+     de caixas de diálogo 'vex'. Para usar o vex vc deve importar ela no html.
+
+   2-Internamente a classe mxGraph, foi moditicado o atributo do seguinte trecho
+   de código "mxGraph.prototype.alreadyConnectedResource".
+	
+   

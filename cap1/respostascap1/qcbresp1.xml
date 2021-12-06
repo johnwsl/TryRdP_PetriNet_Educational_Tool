@@ -1,0 +1,7 @@
+
+  <mxGraphModel>
+    <root>
+      <Arco IDsource="Chegada" IDtarget="Estoque"/>
+      <Arco IDsource="Estoque" IDtarget="Saida"/>
+    </root>
+  </mxGraphModel>

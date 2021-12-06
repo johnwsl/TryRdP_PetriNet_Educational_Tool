@@ -1,0 +1,21 @@
+<mxGraphModel>
+    <root>
+      <TransTemp Tempo="10"/>
+      <Lugar Tokens="0"/>
+      <TransIm Prioridade="1" Peso="1" GuardaExpression=""/>
+      <Lugar Tokens="0"/>
+      <TransTemp Tempo="0.5"/>
+      <Lugar Tokens="1"/>
+      <Arco Peso="1" IDsource="|TransTemp|10|" IDtarget="|Lugar|0|"/>
+      <Arco Peso="1" IDsource="|Lugar|0|" IDtarget="|TransIm|1|1|"/>
+      <Arco Peso="1" IDsource="|TransIm|1|1|" IDtarget="|Lugar|0|"/>
+      <Arco Peso="1" IDsource="|Lugar|0|" IDtarget="|TransTemp|0.5|"/>
+      <Arco Peso="1" IDsource="|TransTemp|0.5|" IDtarget="|Lugar|1|"/>
+      <Arco Peso="1" IDsource="|Lugar|1|" IDtarget="|TransIm|1|1|"/>
+      <Lugar Tokens="1000"/>
+      <Arco Peso="1" IDsource="|TransTemp|0.5|" IDtarget="|Lugar|1000|"/>
+      <Arco Peso="1" IDsource="|Lugar|1000|" IDtarget="|TransTemp|10|"/>
+      <Metrica Expression="(P{(#|Lugar|0|0|0|1|1|1|1|1|1|1|1|0.5|&gt;0)})"/>
+      <Metrica Expression="((E{#|Lugar|0|0|0|1|1|1|1|1|1|1|1|10|})+(E{#|Lugar|0|0|0|1|1|1|1|1|1|1|1|0.5|}))/((P{(#|Lugar|0|0|0|1|1|1|1|1|1|1|1|0.5|&gt;0)})*2)"/>
+    </root>
+  </mxGraphModel>

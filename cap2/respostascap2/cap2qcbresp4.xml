@@ -1,0 +1,12 @@
+  <mxGraphModel>
+    <root>
+      <Arco IDsource="LimiteEstoque" IDtarget="Chegada"/>
+      <Arco IDsource="Saida" IDtarget="LimiteEstoque"/>
+      <Arco IDsource="Estoque" IDtarget="Saida"/>
+      <Arco IDsource="LimiteLoja" IDtarget="Saida"/>
+      <Arco IDsource="Chegada" IDtarget="Estoque"/>
+      <Arco IDsource="Saida" IDtarget="Loja"/>
+      <Arco IDsource="Loja" IDtarget="VendaProduto"/>
+      <Arco IDsource="VendaProduto" IDtarget="LimiteLoja"/>
+    </root>
+  </mxGraphModel>

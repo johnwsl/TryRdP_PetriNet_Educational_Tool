@@ -1,0 +1,8 @@
+  <mxGraphModel>
+    <root>
+      <Arco IDsource="ChegadaBrinquedo" IDtarget="Brinquedos"/>
+      <Arco IDsource="ChegadaEmbalagem" IDtarget="Embalagem"/>
+      <Arco IDsource="Brinquedos" IDtarget="EmbalarBrinquedo"/>
+      <Arco IDsource="Embalagem" IDtarget="EmbalarBrinquedo"/>
+    </root>
+  </mxGraphModel>

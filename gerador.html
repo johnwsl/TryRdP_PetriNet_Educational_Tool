@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Rede de Petri" />
+        <meta name="author" content="" />
+
+        <title>TryRdP</title>
+        <!--Biblioteca usada para salvar arquivos-->
+        <script src="filesaver/dist/FileSaver.js"></script>
+        <!--Biblioteca vex - para a criação de caixas de diálogo-->
+        <script src="vex/dist/js/vex.combined.min.js"></script>
+        <link rel="stylesheet" href="vex/dist/css/vex.css" />
+        <link rel="stylesheet" href="vex/dist/css/vex-theme-default.css" />
+        <link rel="stylesheet" href="vex/dist/css/vex-theme-os.css" />
+        <link rel="stylesheet" href="vex/dist/css/vex-theme-plain.css" />
+        <link rel="stylesheet" href="vex/dist/css/vex-theme-wireframe.css" />
+        <link rel="stylesheet" href="vex/dist/css/vex-theme-flat-attack.css" />
+        <link rel="stylesheet" href="vex/dist/css/vex-theme-top.css" />
+        <link rel="stylesheet" href="vex/dist/css/vex-theme-bottom-right-corner.css" />  
+        <!-- ////////////////////////////////////////////////////// -->
+
+        <!-- mxBasePath é a variável que recebe a URL que direciona para a pasta onde se encontra todos os elemento da biblioteca mxGraph -->
+        <script type="text/javascript">
+            mxBasePath = 'src';
+        </script>
+    
+        <!-- Carrega a classe superior da biblioteca -->
+        <script type="text/javascript" src="src/js/mxClient.js"></script>
+
+        <!-- Define o estilo onde o grafo da ferramenta irá ficar -->
+        <link href="ferramenta/bodygraph.css" rel="stylesheet" />
+    
+        <!-- Carrega as funções escritas da ferramenta TryRdP-->
+        <script type="text/javascript" src="ferramentageraex.js"></script>
+
+        <!--//////////////////////////////////////////////////-->
+
+
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body onload="main(document.getElementById('bodygraph'))">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark" style="height: 95px">
+            <div><img src="logo.png" class="img-rounded" width="180" height="130">&nbsp; &nbsp;</div>
+            <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle"><i class="fas fa-bars fa-2x"></i></button>
+
+            <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+                <h2 style="color: white;">TryRdP</h2>
+            </div>
+        </nav>
+
+        <div id="layoutSidenav">
+
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+
+                            <div class="sb-sidenav-menu-heading"></div>
+
+                            <a class="nav-link"><div class="sb-nav-link-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                                O que é o TryRdP?
+                            </a>
+
+                            <div class="sb-sidenav-menu-heading">Conteúdo</div>
+
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#intro" aria-expanded="false" aria-controls="intro">
+                                <div class="sb-nav-link-icon"><i class="material-icons">menu_book</i></div>
+                                1-Introdução
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down" style="display: none;"></i></div>
+                            </a>
+                            <div class="collapse" id="intro" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+
+                                </nav>
+                            </div>
+                            
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#modelbasico" aria-expanded="false" aria-controls="modelbasico">
+                                <div class="sb-nav-link-icon"><i class="material-icons">trending_up</i></div>
+                                2-Modelagem Básica
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down" style="display: none;"></i></div>
+                            </a>
+                            <div class="collapse" id="modelbasico" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#modelavan" aria-expanded="false" aria-controls="modelavan">
+                                <div class="sb-nav-link-icon"><i class="material-icons"> functions </i></div>
+                                3-Modelagem Avançada
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down" style="display: none;"></i></div>
+                            </a>
+                            <div class="collapse" id="modelavan" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+
+                                </nav>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+
+            <!--Conteúdo, botões mais o footer do lado do conteúdo(parte branca)-->
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid">
+                        <h1 class="mt-4">Gerar XML de um Modelo</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item">Gerar XML de um Modelo</li>
+                        </ol>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <p class="mb-0 text-justify"> &nbsp; &nbsp; &nbsp; Abaixo segue 2 botões: um para visualizar e baixar o XML vindo da 
+                                    biblioteca do MxGraph gerado
+                                    a partir de um modelo criado e outro
+                                    para gerar e baixar um XML que pode ser usado em uma questão do TryRdP
+                                    gerado, também, a partir de um modelo criado. Você pode criar um modelo em rede de Petri abaixo e baixar o XML 
+                                    desse modelo para usar e criar 
+                                    alguma questão no TryRdP. <br><br>
+                                    &nbsp; &nbsp; &nbsp; Vale lembrar que o XML do MxGraph foi modificado para usar na ferramenta TryRdP. Além disso,
+                                    o XML gerado para um modelo (usado para interpretar questões no TryRdP) vem da "filtragem" do XML modificado do MxGraph.
+                                    Abaixo você pode visualizar o XML do MxGraph ou baixar o XML do modelo.                                    
+                                </p>
+                            </div>
+                        </div>
+              <!--Botões-->
+              <div class="row">
+                <div class="col-sm-12 d-flex justify-content-around mt-4 mb-4">
+
+                    <div class="well">
+                        <a id="xmlmxgraph" class="btn btn-dark" role="button" style="color: white;">Visualizar e Baixar XML do MxGraph</a>
+                    </div>
+
+                    <div class="well">
+                        <a id="enviar" class="btn btn-dark" role="button" style="color: white;">Gerar, visualizar e baixar o XML do modelo (para usar no TryRdP)</a>
+                    </div>
+
+                </div>
+              </div>
+              <!--//////////////////////-->
+                        
+                        <!-- Conteiners onde se encontra a ferramenta de construção das Redes de Petri-->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div id="bodygraph" class="bodygraph">
+                                </div>
+                            </div>
+                        </div>
+                        <!--//////////////////////////////////////////////////////////////////////////-->
+                    
+                    </div>
+                </main>
+
+
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; TryRdP 2020</div>
+                            <div>
+                                <a href="#" onclick="window.open('http://www.ufrpe.br/')">Universidade Federal Rural de Pernambuco</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!--/////////////////////////////////////////////////////////////////////////////////////////-->
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+
+    </body>
+</html>

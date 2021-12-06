@@ -1,0 +1,8 @@
+  <mxGraphModel>
+    <root>
+      <Arco IDsource="RoteadorDesligado" IDtarget="RoteadorLigando"/>
+      <Arco IDsource="RoteadorLigando" IDtarget="RoteadorLigado"/>
+      <Arco IDsource="RoteadorDesligando" IDtarget="RoteadorDesligado"/>
+      <Arco IDsource="RoteadorLigado" IDtarget="RoteadorDesligando"/>
+    </root>
+  </mxGraphModel>

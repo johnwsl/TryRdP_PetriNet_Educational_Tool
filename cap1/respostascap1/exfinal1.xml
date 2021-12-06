@@ -1,0 +1,16 @@
+  <mxGraphModel>
+    <root>
+      <Lugar Tokens="1"/>
+      <TransTemp Tempo="0"/>
+      <Lugar Tokens="0"/>
+      <TransTemp Tempo="0"/>
+      <Lugar Tokens="0"/>
+      <TransTemp Tempo="0"/>
+      <Arco Peso="1" IDsource="|Lugar|1|" IDtarget="|TransTemp|0|"/>
+      <Arco Peso="1" IDsource="|TransTemp|0|" IDtarget="|Lugar|0|"/>
+      <Arco Peso="1" IDsource="|Lugar|0|" IDtarget="|TransTemp|0|"/>
+      <Arco Peso="1" IDsource="|TransTemp|0|" IDtarget="|Lugar|0|"/>
+      <Arco Peso="1" IDsource="|Lugar|0|" IDtarget="|TransTemp|0|"/>
+      <Arco Peso="1" IDsource="|TransTemp|0|" IDtarget="|Lugar|1|"/>
+    </root>
+  </mxGraphModel>

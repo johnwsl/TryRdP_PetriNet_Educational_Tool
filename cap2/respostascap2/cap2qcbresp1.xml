@@ -1,0 +1,12 @@
+  <mxGraphModel>
+    <root>
+      <Arco IDsource="EnvioInfo" IDtarget="Bat3"/>
+      <Arco IDsource="Bat2" IDtarget="Mis2"/>
+      <Arco IDsource="InfoDoGeneral" IDtarget="EnvioInfo"/>
+      <Arco IDsource="Bat3" IDtarget="Mis3"/>
+      <Arco IDsource="GenChuikov" IDtarget="InfoDoGeneral"/>
+      <Arco IDsource="EnvioInfo" IDtarget="Bat1"/>
+      <Arco IDsource="EnvioInfo" IDtarget="Bat2"/>
+      <Arco IDsource="Bat1" IDtarget="Mis1"/>
+    </root>
+  </mxGraphModel>

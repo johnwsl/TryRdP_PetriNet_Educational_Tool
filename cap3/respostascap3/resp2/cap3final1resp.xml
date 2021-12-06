@@ -1,0 +1,29 @@
+  <mxGraphModel>
+    <root>
+      <Lugar Tokens="4"/>
+      <Lugar Tokens="3"/>
+      <Lugar Tokens="2"/>
+      <TransTemp Tempo="15"/>
+      <TransTemp Tempo="1"/>
+      <TransTemp Tempo="2"/>
+      <TransTemp Tempo="30"/>
+      <TransTemp Tempo="20"/>
+      <TransTemp Tempo="150"/>
+      <Lugar Tokens="0"/>
+      <Lugar Tokens="0"/>
+      <Lugar Tokens="0"/>
+      <Arco Peso="1" IDsource="|Lugar|4|" IDtarget="|TransTemp|15|"/>
+      <Arco Peso="1" IDsource="|TransTemp|15|" IDtarget="|Lugar|0|"/>
+      <Arco Peso="1" IDsource="|Lugar|0|" IDtarget="|TransTemp|1|"/>
+      <Arco Peso="1" IDsource="|TransTemp|1|" IDtarget="|Lugar|4|"/>
+      <Arco Peso="1" IDsource="|TransTemp|2|" IDtarget="|Lugar|3|"/>
+      <Arco Peso="1" IDsource="|Lugar|3|" IDtarget="|TransTemp|30|"/>
+      <Arco Peso="1" IDsource="|TransTemp|30|" IDtarget="|Lugar|0|"/>
+      <Arco Peso="1" IDsource="|TransTemp|20|" IDtarget="|Lugar|2|"/>
+      <Arco Peso="1" IDsource="|Lugar|2|" IDtarget="|TransTemp|150|"/>
+      <Arco Peso="1" IDsource="|TransTemp|150|" IDtarget="|Lugar|0|"/>
+      <Arco Peso="1" IDsource="|Lugar|0|" IDtarget="|TransTemp|20|"/>
+      <Arco Peso="1" IDsource="|Lugar|0|" IDtarget="|TransTemp|2|"/>
+      <Metrica Expression="(P{(#|Lugar|4|0|0|1|1|1|1|0|0|0|2|16|&gt;=2)AND(#|Lugar|3|0|0|1|1|1|1|0|0|0|2|32|&gt;=2)AND(#|Lugar|2|0|0|1|1|1|1|0|0|0|2|170|&gt;=1)})"/>
+    </root>
+  </mxGraphModel>

@@ -1,0 +1,15 @@
+  <mxGraphModel>
+    <root>
+      <Arco Peso="2" IDsource="ardoisbytes" IDtarget="memoriahexa"/>
+      <Arco Peso="2" IDsource="memoriahexa" IDtarget="saidahexa"/>
+      <Arco Peso="8" IDsource="octalbits" IDtarget="arbyte"/>
+      <Arco Peso="8" IDsource="reoctal" IDtarget="octalbits"/>
+      <Arco Peso="16" IDsource="rehexa" IDtarget="hexabits"/>
+      <Arco Peso="16" IDsource="hexabits" IDtarget="ardoisbytes"/>
+      <Arco IDsource="arbyte" IDtarget="memoriaoctal"/>
+      <Arco IDsource="memoriaoctal" IDtarget="saidaoctal"/>
+      <Arco IDsource="caracteres" IDtarget="reoctal"/>
+      <Arco IDsource="entrada" IDtarget="caracteres"/>
+      <Arco IDsource="caracteres" IDtarget="rehexa"/>
+    </root>
+  </mxGraphModel>

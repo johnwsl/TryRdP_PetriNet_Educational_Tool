@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Resposta:exercício final</title>
+      <!-- mxBasePath é a variável que recebe a URL que direciona para a pasta onde se encontra todos os elemento da biblioteca mxGraph -->
+      <script type="text/javascript">
+          mxBasePath = '../src';
+      </script>
+  
+      <!-- Carrega a classe superior da biblioteca -->
+      <script type="text/javascript" src="../src/js/mxClient.js"></script>
+
+      <script type="text/javascript" src="tokengame.js"></script>
+  </head>
+  <body onload="tokengame(document.getElementById('bodygraph'))">
+    <h1><u>TokenGame</u></h1>
+    <div class="card mb-4">
+      <div class="card-body">
+          <div id="bodygraph">
+          </div>
+      </div>
+  </div>
+  </body>
+</html>

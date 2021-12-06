@@ -1,0 +1,8 @@
+  <mxGraphModel>
+    <root>
+      <Arco IDsource="materiaprima" IDtarget="Processo1"/>
+      <Arco IDsource="materiaprima" IDtarget="Processo2"/>
+      <Arco IDsource="Chegada" IDtarget="materiaprima"/>
+      <Arco IDsource="materiaprima" IDtarget="Processo3"/>
+    </root>
+  </mxGraphModel>

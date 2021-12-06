@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Rede de Petri" />
+        <meta name="author" content="" />
+
+        <title>TryRdP</title>
+        
+        <!--Biblioteca vex - para a criação de caixas de diálogo-->
+        <script src="../vex/dist/js/vex.combined.min.js"></script>
+        <link rel="stylesheet" href="../vex/dist/css/vex.css" />
+        <link rel="stylesheet" href="../vex/dist/css/vex-theme-default.css" />
+        <link rel="stylesheet" href="../vex/dist/css/vex-theme-os.css" />
+        <link rel="stylesheet" href="../vex/dist/css/vex-theme-plain.css" />
+        <link rel="stylesheet" href="../vex/dist/css/vex-theme-wireframe.css" />
+        <link rel="stylesheet" href="../vex/dist/css/vex-theme-flat-attack.css" />
+        <link rel="stylesheet" href="../vex/dist/css/vex-theme-top.css" />
+        <link rel="stylesheet" href="../vex/dist/css/vex-theme-bottom-right-corner.css" />    
+        <!--////////////////////////////////////////////-->
+
+        <!-- mxBasePath é a variável que recebe a URL que direciona para a pasta onde se encontra todos os elemento da biblioteca mxGraph -->
+        <script type="text/javascript">
+            mxBasePath = '../src';
+        </script>
+    
+        <!-- Carrega a classe superior da biblioteca -->
+        <script type="text/javascript" src="../src/js/mxClient.js"></script>
+
+        <!-- Define o estilo onde o grafo da ferramenta irá ficar -->
+        <link href="../ferramenta/bodygraph.css" rel="stylesheet" />
+    
+        <!-- Carrega as funções escritas da ferramenta TryRdP-->
+        <script type="text/javascript" src="../ferramenta/ferramentaintro.js"></script>
+
+        <!--//////////////////////////////////////////////////-->
+
+        <link href="../css/styles.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body onload="main(document.getElementById('bodygraph'),'respostascap1/exfinal1.xml', '../cap2/modelbasica.html', 'finalcap1', 2)">
+
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark" style="height: 95px">
+            <div><img src="../logo.png" class="img-rounded" width="180" height="130">&nbsp; &nbsp;</div>
+            <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle"><i class="fas fa-bars fa-2x"></i></button>
+
+            <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+                <h2 style="color: white;">TryRdP</h2>
+            </div>
+        </nav>
+
+        <div id="layoutSidenav">
+
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+
+                            <div class="sb-sidenav-menu-heading"></div>
+
+                            <a class="nav-link" href="../index.html"><div class="sb-nav-link-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                                O que é o TryRdP?
+                            </a>
+
+                            <div class="sb-sidenav-menu-heading">Conteúdo</div>
+
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#intro" aria-expanded="false" aria-controls="intro">
+                                <div class="sb-nav-link-icon"><i class="material-icons">menu_book</i></div>
+                                1-Introdução
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="intro" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link"  href="introducaoasredesdepetri.html">1.1 Introdução às Redes de Petri</a>
+                                    <a class="nav-link"  href="elementosbasicos.html">1.2 Elementos básicos (lugares, transições, arcos e tokens)</a>
+                                    <a class="nav-link"  href="elementosbasicosumexemplo.html">1.3 Elementos básicos (um exemplo)</a>
+                                    <a class="nav-link"  href="funcionamento.html">1.4 Funcionamento de uma Rede de Petri</a>
+                                    <a class="nav-link"  href="ferramentausoqcb.html">Exercício de Fixação 1.1 (quebra-cabeça) </a> 
+                                    <a class="nav-link"  href="exerciciofixacaoqcb1.html">Exercício de Fixação 1.1 </a>   
+                                    <a class="nav-link"  href="exerciciofixacaoqcb2.html">Exercício de Fixação 1.2  </a>
+                                    <a class="nav-link"  href="funcionamentocondicao.html">1.5 Funcionamento de uma Rede de Petri(pré-condição, disparo e pós-condição) </a>
+                                    <a class="nav-link"  href="funcionamentocondicaoumexemplo.html">1.6 Funcionamento de uma Rede de Petri(pré-condição, disparo e pós-condição) - Um Exemplo</a>
+                                    <a class="nav-link"  href="ferramentauso.html">Exercício de Fixação 1.3 (montagem de grafo) </a>
+                                    <a class="nav-link"  href="exerciciofixacao3.html">Exercício de Fixação 1.3 </a>
+                                    <a class="nav-link"  href="exerciciofinal1.html">Exercício Final 1.1</a>
+                                </nav>
+                            </div>
+                            
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#modelbasico" aria-expanded="false" aria-controls="modelbasico">
+                                <div class="sb-nav-link-icon"><i class="material-icons">trending_up</i></div>
+                                2-Modelagem Básica
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="modelbasico" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="../cap2/modelbasica.html">2 Modelagem Básica</a>
+                                    <a class="nav-link" href="../cap2/redesequencia.html">2.1 Redes Elementares(Sequenciamento)</a>
+                                    <a class="nav-link" href="../cap2/rededistribuicao.html">2.2 Redes Elementares(Distribuição)</a>
+                                    <a class="nav-link" href="../cap2/cap2exfixqcb1.html">Exercício de Fixação 2.1</a>
+                                    <a class="nav-link" href="../cap2/redejoin.html">2.3 Redes Elementares(Junção)</a>
+                                    <a class="nav-link" href="../cap2/cap2exfixqcb2.html">Exercício de Fixação 2.2</a>
+                                    <a class="nav-link" href="../cap2/redeescolha.html">2.4 Redes Elementares(Escolha Não-Determinística)</a>
+                                    <a class="nav-link" href="../cap2/cap2exfixqcb3.html">Exercício de Fixação 2.3</a>
+                                    <a class="nav-link" href="../cap2/buffer.html">2.5 Modelagem com Buffer</a>
+                                    <a class="nav-link" href="../cap2/cap2exfixqcb4.html">Exercício de Fixação 2.4</a>
+                                    <a class="nav-link" href="../cap2/arcoinibidor.html">2.6 Modelagem com Arco Inibidor</a> 
+                                    <a class="nav-link" href="../cap2/arcoinibidorexemplo.html">2.6 Modelagem com Arco Inibidor(exemplo)</a>
+                                    <a class="nav-link" href="../cap2/cap2exfixqcb5.html">Exercício de Fixação 2.5</a>
+                                    <a class="nav-link" href="../cap2/arcomultivalor.html">2.7 Modelagem com Arcos Multivalorados</a>
+                                    <a class="nav-link" href="../cap2/cap2exfixqcb6.html">Exercício de Fixação 2.6</a>
+                                    <a class="nav-link" href="../cap2/estocastico.html">2.8 Rede de Petri Estocástica</a>
+                                    <a class="nav-link" href="../cap2/estocasticoimediata.html">2.8 Rede de Petri Estocástica (transição imediata e exemplo)</a>
+                                    <a class="nav-link" href="../cap2/estocasticofila.html">2.9 Modelo de Fila e Exemplo</a>
+                                    <a class="nav-link" href="../cap2/cap2exfix1.html">Exercício de Fixação 2.7</a>
+                                    <a class="nav-link" href="../cap2/cap2exfix2.html">Exercício de Fixação 2.8</a>
+                                    <a class="nav-link" href="../cap2/cap2exfix3.html">Exercício de Fixação 2.9</a>
+                                    <a class="nav-link" href="../cap2/cap2exfix4.html">Exercício de Fixação 2.10</a>
+                                    <a class="nav-link" href="../cap2/disponibilidade.html">2.10 Disponibilidade</a>
+                                    <a class="nav-link" href="../cap2/cap2exfix5.html">Exercício de Fixação 2.11</a>
+                                    <a class="nav-link" href="../cap2/cap2exfix6.html">Exercício de Fixação 2.12</a>
+                                    <a class="nav-link" href="../cap2/cap2exfinal1.html">Exercício Final 2.1</a>
+                                    <a class="nav-link" href="../cap2/cap2exfinal2.html">Exercício Final 2.2</a>
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#modelavan" aria-expanded="false" aria-controls="modelavan">
+                                <div class="sb-nav-link-icon"><i class="material-icons"> functions </i></div>
+                                3-Modelagem Avançada
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="modelavan" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+                                </nav>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--Footer da barra de navegação-->
+                    <div class="sb-sidenav-footer">
+                        <div id="ponto" style="color: white;"></div>
+                        <br>
+                        <div class="well">
+                            <a onclick="resetar('../index.html')" class="btn btn-outline-secondary btn-sm" role="button" style="color: white; ">Resetar Pontos e Voltar ao Início</a>
+                        </div>
+                    </div>
+                    <!--////////////////////////////-->
+
+                </nav>
+            </div>
+
+            <!--Conteúdo mais o footer do lado do conteúdo(parte branca)-->
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid">
+                        <h1 class="mt-4">1-Introdução</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item">Exercício Final 1</li>
+                        </ol>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <p class="text-justify"> &nbsp; &nbsp; &nbsp; Utilize o ambiente de modelagem abaixo para modelar o sistema descrito a seguir. 
+                                    Em um sistema de transporte urbano via metrô,
+                                    existem três estações e um metrô circulando entre as estações. 
+                                    O metrô para em cada estação para pegar os passageiros.
+                                    O metrô inicia seu percurso na primeira estação e se desloca para a segunda e depois para a
+                                    terceira estação. A terceira estação é conectada a primeira, formando uma linha circular. 
+                                    Além disso, o percurso segue em apenas um sentido.<br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Conteiners onde se encontra a ferramenta de construção das Redes de Petri-->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div id="bodygraph" class="bodygraph">
+                                </div>
+                            </div>
+                        </div>
+                        <!--//////////////////////////////////////////////////////////////////////////-->
+                    
+                    </div>
+                </main>
+
+              <!--Botões voltar e avançar-->
+              <div class="row">
+                <div class="col-sm-12 d-flex justify-content-around mt-4 mb-4">
+
+                  <div class="well">
+                    <a href="exerciciofixacao3.html" class="btn btn-dark" role="button">&nbsp;Voltar&nbsp;</a>
+                  </div>
+
+                  <div class="well">
+                    <a onclick="confirm('respostascap1/exfinal1.html', 'finalcap1')"
+                        class="btn btn-dark" role="button" style="color: white;">Ver Resposta</a>
+                  </div>
+
+                  <div class="well">
+                    <a onclick="restaurar()"
+                        class="btn btn-dark" role="button" style="color: white;">Restaurar Pontos</a>
+                  </div>
+
+                  <div class="well">
+                    <a id="enviar" class="btn btn-dark" role="button" style="color: white;">Enviar Resposta e Avançar</a>
+                  </div>
+
+                </div>
+              </div>
+              <!--//////////////////////-->
+              <!--Botões voltar e avançar-->
+                <div class="row">
+                    <div class="col-sm-12 d-flex justify-content-around mt-4 mb-4">
+
+
+
+                    </div>
+                </div>
+              <!--//////////////////////-->
+
+              <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; TryRdP 2020</div>
+                        <div>
+                            <a href="#" onclick="window.open('http://www.ufrpe.br/')">Universidade Federal Rural de Pernambuco</a>
+                        </div>
+                    </div>
+                </div>
+              </footer>
+            
+            </div>
+            <!--/////////////////////////////////////////////////////////////////////////////////////////-->
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="../js/scripts.js"></script>
+        <script type="text/javascript" src="../ferramenta/geralfuntions.js"></script>
+
+    </body>
+</html>

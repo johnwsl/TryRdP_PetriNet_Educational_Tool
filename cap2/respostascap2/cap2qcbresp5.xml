@@ -1,0 +1,9 @@
+  <mxGraphModel>
+    <root>
+      <Arco IDsource="memoria" IDtarget="saida"/>
+      <Arco IDsource="saida" IDtarget="limite"/>
+      <Arco IDsource="entrada" IDtarget="memoria"/>
+      <Arco IDsource="limite" IDtarget="entrada"/>
+      <Arco IDsource="limite" IDtarget="malerta"/>
+    </root>
+  </mxGraphModel>

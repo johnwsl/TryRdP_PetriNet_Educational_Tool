@@ -1,0 +1,41 @@
+ <mxGraphModel>
+    <root>
+      <Lugar Tokens="1"/>
+      <TransTemp Tempo="24"/>
+      <TransTemp Tempo="24"/>
+      <Lugar Tokens="0"/>
+      <Arco Peso="1" IDsource="|Lugar|1|" IDtarget="|TransTemp|24|"/>
+      <Arco Peso="1" IDsource="|TransTemp|24|" IDtarget="|Lugar|0|"/>
+      <Arco Peso="1" IDsource="|Lugar|0|" IDtarget="|TransTemp|24|"/>
+      <Arco Peso="1" IDsource="|TransTemp|24|" IDtarget="|Lugar|1|"/>
+      <TransTemp Tempo="0.4"/>
+      <Lugar Tokens="0"/>
+      <TransIm Prioridade="1" Peso="1" GuardaExpression=""/>
+      <TransIm Prioridade="1" Peso="1" GuardaExpression="(#|Lugar|1|0|0|1|1|1|1|0|0|0|2|48|&gt;0)"/>
+      <Lugar Tokens="0"/>
+      <Lugar Tokens="50"/>
+      <TransTemp Tempo="0.3"/>
+      <TransIm Prioridade="1" Peso="1" GuardaExpression="(#|Lugar|0|0|0|1|1|1|1|0|0|0|2|48|&gt;0)"/>
+      <Lugar Tokens="0"/>
+      <Lugar Tokens="50"/>
+      <TransTemp Tempo="0.3"/>
+      <TransIm Prioridade="1" Peso="1" GuardaExpression=""/>
+      <Arco Peso="1" IDsource="|TransTemp|0.4|" IDtarget="|Lugar|0|"/>
+      <Arco Peso="1" IDsource="|Lugar|0|" IDtarget="|TransIm|1|1|"/>
+      <Arco Peso="1" IDsource="|Lugar|0|" IDtarget="|TransIm|1|1|"/>
+      <Arco Peso="1" IDsource="|TransIm|1|1|" IDtarget="|Lugar|0|"/>
+      <Arco Peso="1" IDsource="|Lugar|0|" IDtarget="|TransTemp|0.3|"/>
+      <Arco Peso="1" IDsource="|TransTemp|0.3|" IDtarget="|Lugar|50|"/>
+      <Arco Peso="1" IDsource="|Lugar|50|" IDtarget="|TransIm|1|1|"/>
+      <Arco Peso="1" IDsource="|TransIm|1|1|" IDtarget="|Lugar|0|"/>
+      <Arco Peso="1" IDsource="|Lugar|0|" IDtarget="|TransTemp|0.3|"/>
+      <Arco Peso="1" IDsource="|TransTemp|0.3|" IDtarget="|Lugar|50|"/>
+      <Arco Peso="1" IDsource="|Lugar|50|" IDtarget="|TransIm|1|1|"/>
+      <Arco Peso="1" IDsource="|Lugar|0|" IDtarget="|TransIm|1|1|"/>
+      <Arco Peso="1" IDsource="|Lugar|0|" IDtarget="|TransIm|1|1|"/>
+      <ArcoInibidor Peso="1" IDsource="|Lugar|50|" IDtarget="|TransIm|1|1|"/>
+      <ArcoInibidor Peso="1" IDsource="|Lugar|50|" IDtarget="|TransIm|1|1|"/>
+      <Metrica Expression="(P{(#|Lugar|1|0|0|1|1|1|1|0|0|0|2|48|&gt;0)})"/>
+      <Metrica Expression="((E{#|Lugar|0|0|0|4|4|1|1|4|4|4|1|0.4|})+(E{#|Lugar|0|0|0|1|1|1|1|1|1|1|1|0.3|})+(E{#|Lugar|0|0|0|1|1|1|1|1|1|1|1|0.3|}))/2.5"/>
+    </root>
+  </mxGraphModel>
