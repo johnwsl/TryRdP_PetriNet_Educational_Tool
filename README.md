@@ -4,4 +4,4 @@
 
 ### Website: https://tryrdp.herokuapp.com/apres.html
 
-### Paper: https://doi.org/10.5753/rbie.2021.2072
+### Article: https://doi.org/10.5753/rbie.2021.2072
